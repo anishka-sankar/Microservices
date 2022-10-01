@@ -20,3 +20,9 @@ Zipkin Distributed Tracing Server - 9411
 v2
 Docker - Run microservices using Docker and Docker Compose
 Kubernetes - Orchestrate all your microservices with kubernetes
+
+urls
+L1
+http://localhost:8761/
+http://localhost:8083/catalog/abc
+http://localhost:8082/ratings/101
