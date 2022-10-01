@@ -1,0 +1,22 @@
+Microservices disadvantages and spring cloud project to overcome it
+
+note : spring 3.x needs java 17 or > 
+
+Spring Boot v2.3 and lower - V1
+
+- Config management (Spring Cloud Config Server)
+- Dynamic scale up and down (Naming server(Eureka), v1- Ribbon (Client Side Load Balancing) v2(2.4 & >) - Spring Cloud LoadBalancer, Feign (Easier REST Clients))
+- Visibility and monitoring ( Zipkin Distributed Tracing , v1- Netflix Zuul API Gateway v2-Spring Cloud Gateway)
+- Fault Tolerance ( v1-Hystrix v2-Resilience4j)
+
+Limits Microservices - 8080,8081
+Spring Cloud Config Server - 8888
+Currency Exchange Microservice - 8000, 8001,8002
+Currency Conversion Microservice - 8100, 8101, 8102
+Netflix Eureka Naming Server - 8761
+API Gateway - 8765
+Zipkin Distributed Tracing Server - 9411
+
+v2
+Docker - Run microservices using Docker and Docker Compose
+Kubernetes - Orchestrate all your microservices with kubernetes
