@@ -1,0 +1,8 @@
+git --version
+cd - to check current working directory
+
+local repo link 
+C:\Users\anish\OneDrive\Desktop\fullStack\git-localconfig-repo
+
+git add *
+git commit -m "msg"

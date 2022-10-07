@@ -1,0 +1,11 @@
+step 1 
+add netflix hystrix dependency in movie catalog service
+
+step 2 
+add @EnableCircuitBreaker in main class
+
+step 3
+add @HystrixCommand in the method where we need circuit Breaker
+
+step 4
+configure Hystrix behaviour(params)
