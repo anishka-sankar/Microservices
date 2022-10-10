@@ -1,0 +1,24 @@
+Goals
+
+- Externalized (property files)
+- Environment Specific (profiles)
+- Consistent(Spring cloud config server)
+- Version history(git repo source)
+- Real time management
+
+Spring Cloud Config Server
+
+Create config server 
+1. Add spring cloud server dependency in pom.xml
+2. Add @EnableConfigServer in main class
+3. In property file give the location where the configuration needs to be pulled from.
+4. Access url:http://localhost:8080/<file-name>/<profile>
+
+In client side add
+5. Add spring cloud config client dependency in pom.xml
+
+
+Dynamic Refreshing in client side
+- Add actuator dependency
+- Add @RefreshScope at the top of the bean which needs to be refreshed when cong=fig file is updated
+- Make post request using postman http:8080/actuator/refresh

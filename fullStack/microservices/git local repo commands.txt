@@ -4,5 +4,11 @@ cd - to check current working directory
 local repo link 
 C:\Users\anish\OneDrive\Desktop\fullStack\git-localconfig-repo
 
+@CommandPrompt
+
+mkdir configRepo -> to create new directory
+cd configRepo-> change to directory
+git init -> to initialize git repo
+git status
 git add *
 git commit -m "msg"

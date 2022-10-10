@@ -1,0 +1,32 @@
+
+#spring.application.name=configuration
+#server.port=8081
+##spring.cloud.config.server.git.uri=file:///C:/Users/anish/OneDrive/Desktop/fullStack/git-localconfig-repo
+#my.msg="hi, the mgs is from internal properties file"
+#my.list.values=One,Two,Three
+#dbValues={userName:'Rohee', password:'password'}
+#db.userName=Rohee
+#db.host=127.0.0.1
+#db.port=8080
+
+management.endpoints.web.exposure.include: "*"
+
+spring:
+    application.name: configuration
+    profiles.active : dev
+    config:
+        import: "optional:configserver:http://localhost:8081" 
+
+server.port: 8082
+
+my:
+    msg: hi, the mgs is from internal properties file
+    list:
+        values: One,Two,Three
+        
+dbValues: "{userName:'Rohee', password:'password'}"
+    
+
+
+    
+
