@@ -20,5 +20,5 @@ In client side add
 
 Dynamic Refreshing in client side
 - Add actuator dependency
-- Add @RefreshScope at the top of the bean which needs to be refreshed when cong=fig file is updated
+- Add @RefreshScope at the top of the bean which needs to be refreshed when config file is updated
 - Make post request using postman http:8080/actuator/refresh
